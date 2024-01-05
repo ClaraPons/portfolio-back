@@ -4,6 +4,7 @@ const cors = require('cors')
 const mongoose = require('mongoose')
 const app = express()
 const contactRoutes = require('./routes/contact')
+require('dotenv').config();
   
 app.use(cors())
 app.use(bodyParser.json())
@@ -25,7 +26,7 @@ db.mongoose
 
 app.use('/api', contactRoutes)
 
-const PORT = process.env.PORT || 8080
+const PORT = process.env.PORT
 app.listen(PORT, () => {
     console.log(`Server is running on port ${PORT}`)
 })
