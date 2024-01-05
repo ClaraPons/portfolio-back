@@ -1,3 +1,3 @@
 module.exports = {
-    url: "mongodb://localhost:27017/portfolio"
+    url: "mongodb+srv://claragapons:IveRka3zzrkvtQPR@cluster0.pfllvjs.mongodb.net"
   };
